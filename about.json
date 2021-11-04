@@ -1,0 +1,30 @@
+{
+    "aboutMe": [
+        {
+            "index": 1,
+            "header": "👨🏾 vivek bajaj",
+            "traits": [
+                "↳ 23 year old creative coder and graphic designer<br>",
+                "↳ based in new york city & bombay<br>"
+            ]
+        },
+        {
+            "index": 2,
+            "header": "🏆 accolades",
+            "traits": [
+            "↳ learning Adobe Creative Suite since 2008<br>",
+            "↳ designing posters online since 2013 &#8599;<br>",
+            "↳ making his own business out of it in 2014 &#8599;<br>",
+            "↳ designing and developing websites since 2017 &#8599;<br>"
+            ]
+        },
+        {
+            "index": 3,
+            "header": "📚 education + experience",
+            "traits": [
+                "↳ Parsons School of Design, New York<br>",
+                "↳ Bokaap Design, Bombay<br>",
+                "↳ IdeaSpice, Bombay"
+            ]
+        }
+]}

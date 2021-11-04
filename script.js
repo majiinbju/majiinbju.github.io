@@ -1,16 +1,54 @@
+// Parsing About Section
+const about = document.getElementById('about');
+console.log(about);
+
+// Create URL for JS Object File
+var url = "about.json";
+
+// Append JSON for Players
+$.getJSON(url, function(data){
+	for (let i = 0; i < data.aboutMe.length; i++) {
+		const myArticle = document.createElement('article');
+        $("#dialogue").append(myArticle);
+		const aboutIndex = data.aboutMe[i].index;
+        myArticle.setAttribute('id','article' + aboutIndex);
+		$("#article"+ aboutIndex).append("<h1>" + data.aboutMe[i].header + "</h1>")
+		const aboutTraits = data.aboutMe[i].traits;
+        for (let j = 0; j < aboutTraits.length; j++) {
+        $("#article"+ aboutIndex).append("<li>" + data.aboutMe[i].traits[j] + "</li>");
+        }
+	}
+}
+);
+
+
+
+
+
+
+
 /* About Me + Projects */
 
 var container = document.getElementById("container");
 
 function aboutMe() {
-		document.getElementById("about").style.opacity = "1";
-    document.getElementById("projects").style.opacity = "0";
+		document.getElementById("dialogue").style.opacity = "1";
+		document.getElementById("dialogue").style.zIndex = "1";
+    	document.getElementById("projects").style.opacity = "0";
+		document.getElementById("projects").style.zIndex = "0";
   };
 
 function projectsInfo() {
-		document.getElementById("about").style.opacity = "0";
-    document.getElementById("projects").style.opacity = "1";
+		document.getElementById("dialogue").style.opacity = "0";
+		document.getElementById("dialogue").style.zIndex = "0";
+    	document.getElementById("projects").style.opacity = "1";
+		document.getElementById("projects").style.zIndex = "1";
   };
+
+
+
+
+
 
 /* Function to Smoothen the Scroll */
 
@@ -24,9 +62,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+
+
+
+
 /* Type & Delete Effect */
 
-const words = ["Designer", "Creative Coder", "Thinker"];
+const words = ["designer", "developer", "creator"];
 let i = 0;
 let timer;
 
@@ -39,7 +82,7 @@ function typingEffect() {
 			deletingEffect();
 			return false;
 		};
-		timer = setTimeout(loopTyping, 300);
+		timer = setTimeout(loopTyping, 200);
 	};
 	loopTyping();
 };

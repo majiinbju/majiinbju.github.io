@@ -3,10 +3,12 @@
 /* Basic page style resets */
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 [hidden] {
   display: none !important;
 }
+
 
 /* Import fonts */
 @font-face {
@@ -30,22 +32,36 @@ body {
 }
 
 span {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 p {
   font-size: 2vw;
+}
+
+h1{
+  font-size:2vw;
+  padding:0.5vw;
+  margin:0;
+}
+
+li{
+  font-size:1.5vw;
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  text-indent: 5vw;
 }
 /* Landing */
 
 #container{
   width: 100vw;
   height: 100vh;
-  background: white;
+  background: black;
   position: absolute;
   padding-top: 5vh;
   padding-right: 5vw;
-  padding-left: 2.5vw;
+  padding-left: 5vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -53,37 +69,46 @@ p {
   transition:0.5s ease-in-out;
 }
 
+
 #container span{
-  color: black;
+  color: white;
   font-weight: normal;
 }
 
 #container a{
-  color: black;
+  color: white;
   text-decoration: none;
   transition:0.5s ease-in-out;
 }
 
 #container a:hover{
-  color: black;
+  color: white;
   text-decoration: underline;
   transition:0.5s ease-in-out;
 }
 
 #container p{
-  color: black;
+  color: white;
   width:70vw;
   bottom: 1vh;
   position:absolute;
-  opacity:0;
+  opacity:1;
   transition:0.5s ease-in-out;
 }
 
 /* About Me */
 
-.about{
-  width: 30vw;
+#aboutMe{
+  width: 100%;
+  padding:2vw;
+  transition: 0.5s ease-in-out;
 }
+
+#aboutTrait{
+  width:100%;
+  transition: 0.5s ease-in-out;
+}
+
 
 .blink {
   animation: blink 0.5s infinite;
@@ -94,13 +119,46 @@ p {
 
 /* Project Master Properties */
 
+#projects{
+  width:90vw;
+  height:70vh;
+  bottom:2vh;
+  position:absolute;
+  background:red;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition:0.5s ease-in-out;
+  opacity:0;
+}
+
+#dialogue{
+  width:90vw;
+  height:70vh;
+  bottom:2vh;
+  position:absolute;
+  background:none;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  transition: 0.5s ease-in-out;
+  color:white;
+  opacity:0;
+}
+
+#dialogue h1{
+  font-weight:normal;
+  text-decoration: none;
+}
+
 .project-details{
   width: 100vw;
   height: 15vh;
   top: 0;
   padding-top: 5vh;
   padding-right: 5vw;
-  padding-left: 2.5vw;
+  padding-left: 5vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -167,130 +225,6 @@ p {
 
 #project-1 p{
   color: gold;
-  width:70vw;
-  bottom: 1vh;
-  position:absolute;
-  opacity:0;
-  transition:0.5s ease-in-out;
-}
-
-/* Project 2 */
-
-#project-2{
-  width: 100vw;
-  height: 100vh;
-  top: 200vh;
-  background: pink;
-  color:black;
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  border-bottom: 0.5vh solid black;
-  transition:0.5s ease-in-out;
-}
-
-#project-2 span{
-  color: black;
-  font-weight: normal;
-}
-
-#project-2 a{
-  color: black;
-  text-decoration: none;
-  transition:0.5s ease-in-out;
-}
-
-#project-2 a:hover{
-  color: black;
-  text-decoration: underline;
-  transition:0.5s ease-in-out;
-}
-
-#project-2 p{
-  color: black;
-  left: 2.5vw;
-  width:70vw;
-  bottom: 1vh;
-  position:absolute;
-  opacity:0;
-  transition:0.5s ease-in-out;
-}
-
-/* Project 3 */
-
-#project-3{
-  width: 100vw;
-  height: 100vh;
-  top: 300vh;
-  background: gray;
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  border-bottom: 0.5vh solid black;
-  transition:0.5s ease-in-out;
-}
-
-#project-3 span{
-  color: black;
-  font-weight: normal;
-}
-
-#project-3 a{
-  color: black;
-  text-decoration: none;
-  transition:0.5s ease-in-out;
-}
-
-#project-3 a:hover{
-  color: black;
-  text-decoration: underline;
-  transition:0.5s ease-in-out;
-}
-
-#project-3 p{
-  color: black;
-  left: 2.5vw;
-  width:70vw;
-  bottom: 1vh;
-  position:absolute;
-  opacity:0;
-  transition:0.5s ease-in-out;
-}
-
-/* Project 4 */
-
-#project-4{
-  width: 100vw;
-  height: 100vh;
-  top: 400vh;
-  background: red;
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  border-bottom: 0.5vh solid black;
-  transition:0.5s ease-in-out;
-}
-
-#project-4 span{
-  color: black;
-  font-weight: normal;
-}
-
-#project-4 a{
-  color: black;
-  text-decoration: none;
-  transition:0.5s ease-in-out;
-}
-
-#project-4 a:hover{
-  color: black;
-  text-decoration: underline;
-  transition:0.5s ease-in-out;
-}
-
-#project-4 p{
-  color: black;
-  left: 2.5vw;
   width:70vw;
   bottom: 1vh;
   position:absolute;

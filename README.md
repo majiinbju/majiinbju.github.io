@@ -6,4 +6,6 @@
 
 ← `style.css`: Stylesheets 🌈
 
-← `script.js`: 
+← `script.js`: Functions + Parsing JSON ⚙️
+
+# Designed and developed by Vivek Bajaj
