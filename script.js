@@ -5,10 +5,10 @@ console.log(about);
 // Create URL for JS Object File
 var url = "about.json";
 
-// Append JSON for Players
+// Append JSON for About Me section
 $.getJSON(url, function(data){
 	for (let i = 0; i < data.aboutMe.length; i++) {
-		const myArticle = document.createElement('article');
+		var myArticle = document.createElement('article');
         $("#dialogue").append(myArticle);
 		const aboutIndex = data.aboutMe[i].index;
         myArticle.setAttribute('id','article' + aboutIndex);
@@ -16,10 +16,32 @@ $.getJSON(url, function(data){
 		const aboutTraits = data.aboutMe[i].traits;
         for (let j = 0; j < aboutTraits.length; j++) {
         $("#article"+ aboutIndex).append("<li>" + data.aboutMe[i].traits[j] + "</li>");
-        }
-	}
-}
-);
+        		}
+			}
+		}
+	);
+
+// Append JSON for Projects section
+$.getJSON(url, function(data){
+	for (let i = 0; i < data.projects.length; i++) {
+		var myProject = document.createElement('article');
+		const projectIndex = data.projects[i].index;
+        $("#projects").append(myProject);
+        myProject.setAttribute('id','project-' + projectIndex);
+		var projectImgBox = document.createElement('div');
+		$('#project-' + projectIndex).append(projectImgBox);
+		projectImgBox.className = "imgBox";
+		var projectTitleBox = document.createElement('div');
+		$('#project-' + projectIndex).append(projectTitleBox);
+		projectImgBox.setAttribute('id', 'img-' + projectIndex);
+		$("#img-"+ projectIndex).append("<img src='img/" + data.projects[i].img + "'>");
+		// var projectTitle = document.createElement('span');
+		// projectTitle.append(data.projects[i].name);
+		// projectTitleBox.append(projectTitle);
+		// projectTitleBox.className = "titleBox";
+			}
+		}
+	);
 
 
 
@@ -36,19 +58,27 @@ function aboutMe() {
 		document.getElementById("dialogue").style.zIndex = "1";
     	document.getElementById("projects").style.opacity = "0";
 		document.getElementById("projects").style.zIndex = "0";
+		document.getElementById("resume").style.opacity = "0";
+		document.getElementById("resume").style.zIndex = "0";
   };
 
 function projectsInfo() {
 		document.getElementById("dialogue").style.opacity = "0";
 		document.getElementById("dialogue").style.zIndex = "0";
+		document.getElementById("resume").style.opacity = "0";
+		document.getElementById("resume").style.zIndex = "0";
     	document.getElementById("projects").style.opacity = "1";
 		document.getElementById("projects").style.zIndex = "1";
   };
 
-
-
-
-
+function resumeInfo() {
+	document.getElementById("dialogue").style.opacity = "-1";
+	document.getElementById("dialogue").style.zIndex = "-1";
+	document.getElementById("projects").style.opacity = "-1";
+	document.getElementById("projects").style.zIndex = "-1";
+	document.getElementById("resume").style.opacity = "1";
+	document.getElementById("resume").style.zIndex = "1";
+};
 
 /* Function to Smoothen the Scroll */
 
@@ -69,7 +99,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 /* Type & Delete Effect */
 
-const words = ["designer", "developer", "creator"];
+const words = ["designer", "developer", "storyteller"];
 let i = 0;
 let timer;
 
