@@ -120,29 +120,6 @@ li{
   to { opacity: .0; }
 }
 
-/* About Me Child Properties */
-
-#dialogue{
-  width: 90vw;
-  height: 70vh;
-  bottom: 2vh;
-  position: absolute;
-  background-color: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  transition: 0.5s ease-in-out;
-  color: white;
-  opacity: 0;
-  transition: 0.5s ease-in-out;
-}
-
-#dialogue h1{
-  font-weight: normal;
-  text-decoration: none;
-}
-
 /* Project Master Properties */
 
 #projects{
@@ -206,6 +183,7 @@ li{
   width:100%;
   font-size: 2vw;
 }
+
 /* Resume Master Properties */
 
 #resume{
@@ -219,4 +197,27 @@ li{
   color: white;
   transition: 0.5s ease-in-out;
   opacity: 0;
+}
+
+/* Resume Child Properties */
+
+#resume{
+  width: 90vw;
+  height: 70vh;
+  bottom: 2vh;
+  position: absolute;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  transition: 0.5s ease-in-out;
+  color: white;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+#resume h1{
+  font-weight: normal;
+  text-decoration: none;
 }

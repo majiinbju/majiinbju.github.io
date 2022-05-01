@@ -5,12 +5,11 @@ console.log(about);
 // Create URL for JS Object File
 var url = "about.json";
 
-// Append JSON for About Me section
+// Append JSON for Resume section
 $.getJSON(url, function(data){
 	for (let i = 0; i < data.aboutMe.length; i++) {
 		var myArticle = document.createElement('article');
-        $("#dialogue").append(myArticle);
-		const aboutIndex = data.aboutMe[i].index;
+        $("#resume").append(myArticle);
         myArticle.setAttribute('id','article' + aboutIndex);
 		$("#article"+ aboutIndex).append("<h1>" + data.aboutMe[i].header + "</h1>")
 		const aboutTraits = data.aboutMe[i].traits;
@@ -44,13 +43,12 @@ $.getJSON(url, function(data){
 	);
 
 
-
+/* Information Highlight */
 
 
 
 
 /* About Me + Projects */
-
 var container = document.getElementById("container");
 
 function aboutMe() {
@@ -93,11 +91,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-
-
-
-
 /* Type & Delete Effect */
+
 
 const words = ["designer", "developer", "storyteller"];
 let i = 0;
