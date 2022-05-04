@@ -1,0 +1,7 @@
+title: About
+
+fields:
+  summary:
+    label: Summary
+    type: textarea
+    size: large

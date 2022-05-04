@@ -1,0 +1,25 @@
+title: Review
+
+columns:
+  - width: 1/2
+    sections:
+      analysis:
+        type: fields
+        fields:
+          title:
+            type: text
+          synopsis:
+            type: textarea
+          analysis:
+            type: textarea
+          director:
+            type: text
+          release:
+            type: text
+  - width: 1/2
+    sections:
+      gallery:
+        type: files
+        layout: cards
+        image:
+          ratio: 16/9

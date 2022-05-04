@@ -1,0 +1,50 @@
+body > .landing {
+  top: 0;
+  left: 0;
+}
+
+.landing {
+  position: absolute;
+  background: red;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  z-index: -1;
+}
+
+.zig-zag-1 {
+    background: 
+      repeating-linear-gradient(
+          45deg,
+          #FC642D,
+          #ff8e65 40px,
+          #FC642D 40px,
+          #FC642D 80px,
+          /* black 80px,
+          black 120px); */
+          black 80px,
+          black 120px);
+    background-size: 100px 100%;
+  }
+  
+  .zig-zag-2 {
+    mask-image: 
+    repeating-linear-gradient(
+      to right,
+      black 100px,
+      black 200px,
+      transparent 200px,
+      transparent 300px);
+    background:
+      repeating-linear-gradient(
+        -45deg,
+        black,
+        black 40px,
+        #FC642D 40px,
+        #FC642D 80px,
+        /* black 80px,
+        black 120px); */
+        black 80px,
+        black 120px);
+    background-size: 100px 100%;
+  }

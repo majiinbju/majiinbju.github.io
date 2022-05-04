@@ -1,0 +1,13 @@
+.about-layout {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    column-gap: 3rem;
+}
+
+p {
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    color: #FC642D;
+    text-shadow: 0px 0px 5px #FC642D;
+}

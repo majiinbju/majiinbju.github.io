@@ -1,0 +1,27 @@
+Title: Parasite
+
+----
+
+Synopsis: Decent but nothing special.
+
+----
+
+Analysis:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a lorem at diam tempor auctor gravida consequat sem. <br>Mauris lacus orci, gravida vel ipsum ultricies, porta convallis ante. Sed dignissim tempus ullamcorper. Vestibulum mattis ac sem eu mollis. Mauris in rhoncus sapien. Morbi non eleifend tortor. 
+
+Donec fermentum tortor eleifend nulla luctus, ut tincidunt diam mattis. Aliquam mattis velit velit, et mattis enim dictum ut. Donec venenatis, magna id rutrum aliquet, leo sapien condimentum nibh, vitae feugiat sem nisi non arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+Morbi libero orci, consequat et maximus eget, mattis eget orci. Cras vulputate consequat tempus. Fusce vestibulum dui mi, at vulputate orci ornare facilisis. Maecenas porta nulla sed bibendum congue. Vestibulum semper, libero quis vehicula iaculis, velit urna facilisis leo, ut molestie massa ipsum ut nulla. Nullam eu efficitur elit.
+
+----
+
+Director: Bong Joon-Ho
+
+----
+
+Release: 27th June, 2019
+
+----
+
+Date: 13/01/2021

@@ -1,0 +1,5 @@
+sections:
+  reviews: 
+    type: pages
+    layout: cards
+

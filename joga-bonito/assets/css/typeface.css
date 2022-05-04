@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Jet-Brains';
+  src: url(/assets/fonts/JetBrainsMono-Regular.woff2) format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Jet-Brains';
+  src: url(/assets/fonts/JetBrainsMono-SemiBold.woff2) format('woff');
+  font-style: bold;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Jet-Brains';
+  src: url(/assets/fonts/JetBrainsMono-SemiBoldItalic.woff2) format('woff');
+  font-style: italic;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Jet-Brains';
+  src: url(/assets/fonts/JetBrainsMono-Bold.woff2) format('woff');
+  font-style: bold;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Jet-Brains';
+  src: url(/assets/fonts/JetBrainsMono-BoldItalic.woff2) format('woff');
+  font-style: italic;
+  font-weight: 700;
+}

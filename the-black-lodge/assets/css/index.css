@@ -1,0 +1,161 @@
+/* Root Value Stylings */
+
+
+*,
+*:before,
+*:after {
+    box-sizing: none;
+    padding: 0;
+    margin: none;
+}
+
+
+/* Body Stylings */
+
+
+body {
+    margin: 3rem;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+
+/* Anchor Stylings */
+
+
+a {
+    color: currentColor;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
+}
+
+a:hover {
+    text-shadow:0px 0px 2px #FC642D;
+    transition: 0.25s ease-in-out;
+}
+
+
+/* Navbar Stylings */
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.logo {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #FC642D;
+    background-color: black;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 0px black;
+    padding: 1rem;
+    transition: 0.25s ease-in-out;
+}
+
+.logo:hover {
+    box-shadow: 0px 0px 10px #FC642D;
+    transition: 0.25s ease-in-out;
+}
+
+.menu {
+    font-size: 1.25rem;
+    display: flex;
+    list-style-type: none;
+}
+
+.menu > li {
+    color: #FC642D;
+    background-color: black;
+    border: 3px solid black;
+    box-shadow: 0px 0px 0px black;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.menu > li:hover {
+    text-shadow:0px 0px 2px #FC642D;
+    box-shadow: 0px 0px 10px #FC642D;
+    transition: 0.25s ease-in-out;
+}
+
+/* 
+.menu > li:nth-child(1) {
+    margin-right: 1.25rem;
+} */
+
+/* Footer Stylings */
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+/* Main Stylings */
+
+
+.main {
+    flex-grow: 1;
+    margin-bottom: 3rem;
+}
+
+.main h1 {
+    margin-bottom: 1.5rem;
+}
+
+
+/* Reviews Grid Stylings */
+
+
+.reviews {
+    display: grid;
+    /* background-color: black; */
+    border-radius: 20px;
+    /* border: 3px solid black; */
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    grid-column-gap: 4rem;
+    grid-row-gap: 3rem;
+    /* padding: 2rem; */
+}
+
+.reviews img {
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 0px black;
+    transform: scale(0.99);
+    transition: 0.25s ease-in-out;
+}
+
+.reviews img:hover {
+    border: 2px solid #FC642D;
+    transform: scale(1);
+    transition: 0.25s ease-in-out;
+}
+
+
+.reviews figure {
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.rev-title {
+    font-weight: bold;
+}
+
+.review-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}

@@ -1,0 +1,9 @@
+title: Reviews
+
+sections:
+  reviews: 
+    type: pages
+    layout: cards
+    image:
+      ratio: 4/5
+      cover: true
