@@ -1,0 +1,38 @@
+
+/* Media Queries */
+/* Mobile */
+
+@media screen and (max-width: 43rem) and (orientation: portrait) {
+  
+    body {
+      font-size: 0.75rem;
+    }
+    
+  }
+  
+  @media screen and (max-height: 43rem) and (orientation: landscape) {
+  
+    body {
+      font-size: 0.75rem;
+    }
+  
+  }
+  
+  
+  /* Tablets */
+  
+  @media screen and (max-width: 62rem) and (orientation: portrait) {
+    
+    body {
+      font-size: 0.75rem;
+    }
+    
+  }
+  
+  @media screen and (max-height: 50rem) and (orientation: landscape) {
+  
+    body {
+      font-size: 1.25rem;
+    }
+
+  }
