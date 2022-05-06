@@ -1,0 +1,315 @@
+/* Basic page style resets */
+:root {
+  --primary: #fa7814;
+  --secondary: #785ab4;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  transition: 0.25s ease-in-out;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+  format("opentype");
+}
+
+@font-face {
+  font-family: Space-Grotesk;
+  src: url("/assets/fonts/space-grotesk.otf")
+  format("opentype");
+}
+
+/* Master Properties */
+
+body {
+  margin: 3rem;
+  font-size: 1.5rem;
+  overflow: auto;
+  color: var(--primary);
+  font-family: space-grotesk;
+  background-color: black;
+  text-transform: lowercase;
+  /* background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%); */
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+
+h1 {
+  font-size: 1.75rem;
+}
+
+ul {
+  margin-top: 0rem;
+  list-style-type: none;
+}
+
+.header {
+  margin-bottom: 4rem;
+  color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 4rem;
+  color: var(--primary);
+}
+
+/* About Me */
+
+#aboutMe{
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+#aboutTrait{
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+}
+@keyframes blink{
+  to { opacity: .0; }
+}
+
+/* About Me Child Properties */
+
+#aboutJosh{
+  opacity: 0;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  grid-template-rows: minmax(100px, auto);
+  /* background-color: black; */
+  border-radius: 20px;
+  /* border: 3px solid black; */
+  list-style: none;
+  /* padding: 2rem; */
+  padding-left: 0rem;
+}
+
+#aboutJosh h1{
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+#aboutJosh ul {
+  list-style-type: none;
+  padding: 0rem;
+}
+
+#aboutJosh li {
+  width: 95%;
+  margin-bottom: 1rem;
+}
+
+#aboutJosh li a {
+  text-decoration: underline;
+}
+
+/* Project Master Properties */
+
+
+#projects {
+  opacity: 1;
+  position: relative;
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  grid-gap: 1rem;
+  padding-left: 0rem;
+  margin: 0rem;
+}
+
+figure {
+  margin: 0rem;
+}
+
+.captionBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+figcaption {
+  opacity: 0;
+}
+
+.year {
+  color: var(--secondary);
+}
+
+figure:hover > .captionBox > figcaption {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+#projects img {
+  width: 100%;
+  /* border-radius: 15px; */
+  /* border: 3px solid white; */
+  /* transform: scale(0.98); */
+  transition: 0.25s ease-in-out;
+}
+
+#projects img:hover {
+  /* transform: scale(1); */
+  /* border: 3px solid blue; */
+}
+
+/* Project Master Properties */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  /* z-index: -1; */
+}
+
+.container > h1 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.container > span {
+  margin-bottom: 3rem;
+}
+
+.video-container {
+  width: 100%;
+  position: relative;
+  padding-bottom:  56.2%;
+  height: 0;
+}
+
+.video-container > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+}
+
+
+/* Media Queries */
+/* Mobile */
+
+@media screen and (max-width: 43rem) and (orientation: portrait) {
+  
+  body {
+    font-size: 0.75rem;
+  }
+
+  figcaption {
+    opacity: 1;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  #projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #aboutJosh {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
+
+@media screen and (max-height: 43rem) and (orientation: landscape) {
+
+  body {
+    font-size: 0.75rem;
+  }
+
+  figcaption {
+    opacity: 1;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  #projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #aboutJosh {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+
+/* Tablets */
+
+@media screen and (max-width: 62rem) and (orientation: portrait) {
+  
+  body {
+    font-size: 0.75rem;
+  }
+
+  figcaption {
+    opacity: 1;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  #projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #aboutJosh {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
+
+@media screen and (max-height: 50rem) and (orientation: landscape) {
+
+  body {
+    font-size: 1.25rem;
+  }
+
+  figcaption {
+    opacity: 1;
+  }
+
+  .logo {
+    font-size: 1.75rem;
+  }
+
+  #projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #aboutJosh {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}

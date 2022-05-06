@@ -1,4 +1,4 @@
-# Welcome to my webspace 👽
+# Welcome to  Josh's Reel 🍿
 
 ← `README.md`: Documentation 📝
 
@@ -8,4 +8,4 @@
 
 ← `script.js`: Functions + Parsing JSON ⚙️
 
-# Designed and developed by Vivek Bajaj
+# Designed and developed by Vivek Bajaj [https://vivekbajaj.design]

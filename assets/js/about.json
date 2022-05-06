@@ -1,0 +1,88 @@
+{
+    "aboutMe": [
+
+        {
+            "index": 1,
+            "header": "about",
+            "traits": [
+            "My name is Josh Chakraborty, and I am a DSLR cinematographer based in Bombay.",
+            "I am a hard-worker, team player, problem-solver, experimental and creative person.",
+            "I try finding unique ways to shoot, taking advantage of lighting and proper framework to emphasise meaning and composition.",
+            "I love working on different types of projects, and in various mediums, as it challenges and teaches me something new."
+            ]
+        },
+
+        {
+            "index": 2,
+            "header": "experience",
+            "traits": [
+                "Having previously worked at <a href='https://www.instagram.com/popitproductions/?hl=en' target='_blank'>Pop-It Productions</a>, I have also worked with various clients such as <a href='/josh-reel-credits.pdf' target='_blank'>Spotify, Reebok, Skoda, Netflix and Uber.</a>",
+                "I have worked as a cameraman, editor, an assistant director, assistant editor, second cameraman and worked on lighting as well as sound recording.",
+                "My most exciting experience was working on the <a href='https://www.youtube.com/watch?v=4bLFDAUc8SA' target='_blank'>Marriott on Wheels</a>, travelling the country with a foodtruck for two months."
+            ]
+        }
+    ],
+
+    "projects":[
+
+        {
+            "index": 1,
+            "name": "marriott on wheels",
+            "img": "1.png",
+            "link": "/marriott/index.html",
+            "year": 2019
+        },
+
+        {
+            "index": 2,
+            "name": "lionsgate prank",
+            "img": "2.png",
+            "link": "/lionsgate/index.html",
+            "year": 2021
+        },
+        {
+            "index": 3,
+            "name": "perk ad",
+            "img": "3.png",
+            "link": "/perk/index.html",
+            "year": 2019
+        },
+        {
+            "index": 4,
+            "name": "lamborghini",
+            "img": "4.png",
+            "link": "/lamborghini/index.html",
+            "year": 2019
+        },
+        {
+            "index": 5,
+            "name": "netflix women's day special",
+            "img": "5.png",
+            "link": "/netflix/index.html",
+            "year": 2020
+        },
+        {
+            "index": 6,
+            "name": "youtube popup",
+            "img": "6.png",
+            "link": "/youtube/index.html",
+            "year": 2020
+        },
+        {
+            "index": 7,
+            "name": "karix 3",
+            "img": "7.png",
+            "link": "/karix/index.html",
+            "year": 2020
+        },
+        {
+            "index": 8,
+            "name": "anand x trupti",
+            "img": "8.png",
+            "link": "/axt/index.html",
+            "year": 2021
+        }
+    ]
+    
+
+}
