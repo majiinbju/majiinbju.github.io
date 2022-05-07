@@ -1,4 +1,4 @@
-hello 🐉
+welcome to my portfolio 🐉
 ========
 - `👋🏾` my name is vivek, and i am a creative coder and designer
 - `🏡` based in new york and bombay
@@ -9,4 +9,6 @@ my goal in any design project is to bridge the gap between meaning and aesthetic
 
 ---
 > [bajju.info](https://www.bajju.info) &nbsp;&middot;&nbsp;
-> github [@majiinbju](https://github.com/majiinbju) 
+> [@majiinbju](https://github.com/majiinbju) &nbsp;&middot;&nbsp;
+> [linkedin](https://www.linkedin.com/in/vivek-bajaj-4a8035152/) &nbsp;&middot;&nbsp;
+> [email](mailto:hi@vivekbajaj.design)
