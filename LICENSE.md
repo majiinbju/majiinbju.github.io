@@ -1,8 +1,6 @@
-******************************************************************************
-
 MIT License
 
-Copyright (c) 2021 Vivek
+Copyright (c) [2022] [Vivek Bajaj]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -18,25 +16,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, sARISING FROM,
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-******************************************************************************
-
-THIRD-PARTY SOFTWARE
-
-1. HK Grotesk
-
-
-******************************************************************************
-1. HK Grotesk
-URL: https://hanken.co/products/hk-grotesk
-******************************************************************************
-HK Grotesk was designed by Hanken Design Co. It is shared using a SIL OFL
-license. Full license text can be found at:
-
-https://hanken.co/pages/web-fonts-eula
-******************************************************************************
-END, HK Grotesk
-******************************************************************************
