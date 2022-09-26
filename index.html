@@ -1,66 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/675d5d02-d465-4299-be34-f75bdefba9c7/favicon.png?v=1663856166304"
+    />
 
-    <title>Vivek Bajaj</title>
+    <title>vivek.web</title>
 
     <!-- Meta tags for SEO and social sharing -->
-    <link rel="canonical" href="https://vivekbajaj.design/" />
-    <meta
-      name="description"
-      content="creating + expanding"
-    />
+    <link rel="canonical" href="https://majiinbju.github.io/" />
+    <meta name="description" content="creating + expanding" />
     <meta name="robots" content="index,follow" />
     <meta property="og:title" content="creating + expanding" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://vivekbajaj.design/" />
-    <meta
-      property="og:description"
-      content="creating + expanding"
-    />
-    <meta
-      property="og:image"
-      content=""
-    />
+    <meta property="og:url" content="https://majiinbju.github.io/" />
+    <meta property="og:description" content="creating + expanding" />
+    <meta property="og:image" content="" />
     <meta name="twitter:card" content="summary" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
   </head>
-  
+
   <body>
-    
+    <header class="header">
+      <!-- About Me -->
+      <span class="distance">
+        <a href="index.html">Vivek Bajaj</a><br />
+        <a id="word"></a><a class="blink">|</a><br />
+        <i>Creating / Expanding</i>
+      </span>
+
+      <!-- Links -->
+      <span class="distance">
+        <a href="#" onmousedown="aboutMe()">About</a><br />
+        <a href="#" onmousedown="projectsInfo()">Work</a><br />
+      </span>
+
+      <!-- Socials -->
+      <span class="distance">
+        <a href="https://bajju.info/" target="_blank">Portfolio</a><br />
+        <a
+          href="https://www.linkedin.com/in/vivek-bajaj-4a8035152/"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </span>
+    </header>
+
     <!-- Landing -->
     <div id="container">
       <!-- About Me -->
-      <span class="about">
-        <a href="index.html">vivekbajaj.design</a><br>
-        <a href="#" id="word"></a><a class="blink">|</a><br>
-      </span>
-      <!-- Links -->
-      <span>
-        <a href="#" onmousedown="aboutMe()">ℹ️ about</a><br>
-        <a href="#" onmousedown="projectsInfo()">🛠 work</a><br>
-        <a href="#" onmousedown="resumeInfo()">🗒 resume</a>
-        <!-- <a href="#">nft collection</a> -->
-      </span>
-      <!-- Socials -->
-      <span>
-        <a href="https://www.instagram.com/majiinbju/" target="_blank">📸 instagram</a><br>
-        <a href="https://www.linkedin.com/in/vivek-bajaj-4a8035152/" target="_blank">🤝 linkedin</a><br>
-        <a href="https://github.com/majiinbju" target="_blank">👾 github</a>
-      </span>
-      <!-- About Me -->
-      <div id="dialogue"></div>
-      <div id="projects"></div>
-      <div id="resume"></div>
+      <p id="about">
+        Vivek Bajaj is a creative coder and graphic designer, <br />based in New
+        York City and Mumbai.<br />
+        <br />He graduated from
+        <a href="https://www.newschool.edu/parsons/" target="_blank"
+          >Parsons School of Design</a
+        >, <br />in New York, with a BFA in Communication Design in 2021.<br /><br />
+        He has previously worked at
+        <a href="https://www.bokaap.design/" target="_blank">Bokaap Design</a>,
+        and <a href="https://ideaspice.com/" target="_blank">IdeaSpice</a>.
+      </p>
+
+      <!-- Projects -->
+      <ul id="projects">
+        <li class="links">
+          <a
+            href="https://github.com/majiinbju/creative-computing-2017"
+            target="_blank"
+            >Creative Coding 2017</a
+          >
+          <span
+            >First learnt how to code. Taught basic HTML and CSS. <br />Keystone
+            projects included creating a website "album", with 10
+            "tracks".</span
+          >
+        </li>
+        <li class="links">
+          <a
+            href="https://github.com/majiinbju/core-interaction-lab-2018"
+            target="_blank"
+            >Core Interaction: Studio 2018</a
+          >
+          <span
+            >Introduction to applying the concepts taught in creative and
+            meaningful ways. <br />Keystone project based on creating and
+            curating a JSON file.</span
+          >
+        </li>
+        <li class="links">
+          <a
+            href="https://github.com/majiinbju/core-interaction-lab-2018"
+            target="_blank"
+            >Core Interaction: Lab 2018</a
+          >
+          <span
+            >Learnt the basics of coding, from flex-box to JSON, which was then
+            applied in the Studio.</span
+          >
+        </li>
+        <li class="links">
+          <a href="#" target="_blank">Network Interfacing 2019</a>
+          <span
+            >Coursework based on learning and applying web APIs, particularly
+            the DAT language used on Beaker Browser. <br />Keystone project was
+            a Peer-to-Peer chat system for our class.</span
+          >
+        </li>
+        <li class="links">
+          <a href="#" target="_blank">Web Advanced: Interaction 2019</a>
+          <span
+            >Class focused on learning the different concepts of JavaScript and
+            making interaction meaningful.</span
+          >
+        </li>
+        <li class="links">
+          <a href="#" target="_blank">Communication Design Workshop 2020</a>
+          <span>Sites that were built during this semester long workshop.</span>
+        </li>
+        <li class="links">
+          <a href="https://glitch.com/@bju/cd-javascript" target="_blank"
+            >Web Advanced: JavaScript 2020</a
+          >
+          <span
+            >Building websites with the intent of fuelling the interaction with
+            JavaScript. <br />Keystone project detailed crticism of the Golden
+            Records by NASA, using web as information.</span
+          >
+        </li>
+      </ul>
     </div>
-      
+    <!-- End of Landing -->
   </body>
-  
 </html>
 <!-- End of HTML -->
